@@ -1,1 +1,16 @@
-<p>header works!</p>
+<div class="logo">
+    <h1>Exclusive</h1>
+</div>
+
+<nav>
+    <ul>
+        @for (item of _navbarItems; track item.id) {
+            <li>{{item.text}}</li>
+        }
+    </ul>
+</nav>
+
+<div class="search">
+    <input type="text" placeholder="What are you looking for?">
+    <mat-icon svgIcon="search"></mat-icon>
+</div>
