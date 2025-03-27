@@ -1,0 +1,15 @@
+$gaps: (1, 2, 3, 4, 5);
+
+@each $gap in $gaps {
+    
+    // One rem based gaps.
+    .gap-#{$gap} {
+        gap: #{$gap}rem;
+    }
+
+    // Zero rem based gaps.
+    .gap-z-#{$gap} {
+        gap: #{$gap / 10}rem;
+    }
+
+}
