@@ -1,5 +1,5 @@
 import { Component, Inject, inject, OnInit, PLATFORM_ID } from '@angular/core';
-import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { RegisterIconsService } from 'src/app/services/register-icons/register-icons.service';
 

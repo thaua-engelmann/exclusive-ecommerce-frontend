@@ -1,6 +1,6 @@
 import { isPlatformServer } from '@angular/common';
 import { Inject, inject, Injectable, PLATFORM_ID } from '@angular/core';
-import { IconOptions, MatIconRegistry } from '@angular/material/icon';
+import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Injectable({
