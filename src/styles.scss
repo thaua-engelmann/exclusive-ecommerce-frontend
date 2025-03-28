@@ -1,6 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @use './app/styles/reset';
 @use './app/styles/flex';
+@use './app/styles/gap';
+@use './app/styles/utilities';
+
+:root {
+    --typo-text: 'Poppins', sans-serif;
+    --typo-title: 'Inter', cursive;
+
+    --border-radius: 5px;
+}
 
 // Configure html font-size to 62.5% in order to use rem units with a 10px based. 62.5% of 16px (default browser font-size) = 10px.
 html {
@@ -9,4 +18,5 @@ html {
 
 body {
     font-size: 1.6rem;
+    font-family: var(--typo-text);
 }
