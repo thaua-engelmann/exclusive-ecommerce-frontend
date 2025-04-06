@@ -1,0 +1,27 @@
+.sign {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 4rem;
+    margin-top: 4rem;
+
+    .banner {
+        background-color: rgb(207, 234, 238);
+    }
+
+    .form {
+        gap: 4.8rem;
+
+        &__text {
+            gap: 2.4rem;
+
+            h1 {
+                font-weight: 500;
+            }
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
