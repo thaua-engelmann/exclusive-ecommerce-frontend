@@ -1,5 +1,6 @@
-$gaps: (1, 2, 3, 4, 5);
+@use 'sass:math';
 
+$gaps: (1, 2, 3, 4, 5);
 @each $gap in $gaps {
     
     // One rem based gaps.
@@ -9,7 +10,7 @@ $gaps: (1, 2, 3, 4, 5);
 
     // Zero rem based gaps.
     .gap-z-#{$gap} {
-        gap: #{$gap / 10}rem;
+        gap: #{math.div($gap, 10)}rem;
     }
 
 }
