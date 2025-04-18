@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-sign-up',
   imports: [CommonModule],
-  templateUrl: './sign-up.component.html',
-  styleUrl: './sign-up.component.scss',
+  templateUrl: './sign-up.page.html',
+  styleUrl: './sign-up.page.scss',
 })
-export class SignUpComponent {}
+export class SignUpPage {}

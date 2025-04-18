@@ -1,13 +1,11 @@
 import { Route } from '@angular/router';
+import { AUTH_ROUTES } from './domain/auth/auth.routes';
 
 export const appRoutes: Route[] = [
-    {
-        path: '',
-        pathMatch: 'full',
-        redirectTo: 'sign-up'
-    },
-    {
-        path: 'sign-up',
-        loadComponent: () => import('./pages/sign-up/sign-up.component').then(c => c.SignUpComponent)
-    }
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: 'sign-up',
+  },
+  ...AUTH_ROUTES,
 ];
