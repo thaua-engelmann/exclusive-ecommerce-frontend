@@ -7,19 +7,23 @@
       <p>Enter your details below</p>
     </div>
 
-    <form>
-      <div class="input-group">
-        <label for="name">Name</label>
-        <input id="name" type="text" />
+    <form class="d-flex f-column gap-4">
+      @for (field of _fields; track field.id) {
+
+      <div
+        class="input-group"
+        [ngClass]="{'input-group--focused': field.isFocused}"
+      >
+        <label [for]="field.id">{{field.label}}</label>
+        <input
+          type="text"
+          [id]="field.id"
+          (focus)="onFocusInput(field)"
+          (blur)="onBlurInput(field)"
+        />
       </div>
-      <div class="input-group">
-        <label for="name">E-mail</label>
-        <input id="name" type="text" />
-      </div>
-      <div class="input-group">
-        <label for="name">Password</label>
-        <input id="name" type="text" />
-      </div>
+
+      }
     </form>
   </div>
 </div>

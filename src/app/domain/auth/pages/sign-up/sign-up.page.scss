@@ -22,6 +22,24 @@
         .input-group {
             display: flex;
             flex-direction: column;
+            position: relative;
+
+            label {
+                color: #999;
+                position: absolute;
+                top: -8px;
+                transition: .2s;
+            }
+
+            input {
+                border-bottom: 2px solid #999;
+            }
+
+            &--focused {
+                label {
+                    top: -2rem;
+                }
+            }
         }
     }
 }
